@@ -1,5 +1,10 @@
+@import "../global";
+
 .navbar {
-    background-color: blue;
+    background-color: $accentColor;
+    position:absolute;
+    top: 0;
+    left: 0;
 }
 
 .right ul {
@@ -9,5 +14,5 @@
     justify-content: center;
     gap: 0.5em;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }

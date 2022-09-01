@@ -1,19 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
+import { Navbar, Sidebar } from "./components";
+import { Update, Home } from "./pages";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import Sidebar from "./components/Sidebar";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Sidebar />
       <BrowserRouter>
+        <Navbar />
+        {/* <Sidebar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/update" element={<Update />} />
         </Routes>
       </BrowserRouter>
     </div>
